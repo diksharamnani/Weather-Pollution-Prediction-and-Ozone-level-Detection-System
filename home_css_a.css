@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+body{
+background: url(bg6.jpg);
+margin:0;
+overflow-x: hidden;
+background-repeat:no-repeat;
+background-size: cover;
+overflow-y :show;
+}
+
+.logo{
+	 background-image: linear-gradient(to right, #FBC8BF,#BDCEED);
+	padding:0;
+	margin:0;
+}
+.logo img{
+	display:inline-block;
+}
+.logo span{
+	font-size:48px;
+	margin-left:45px;
+	font-family: 'Lobster', cursive;
+}
+.topnav {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  position:relative ;
+  top: 0;
+  width: 100%;
+  display:inline-block;
+}
+.topnav-right {
+  float: right;
+}
+.topnav a.active {
+  background-color: gray;
+  color: white;
+}
+#nav {
+    list-style: none inside; 
+	margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+#nav li{
+	background-color:black;
+    display: block;
+    position: relative;
+    float: left;
+	color:white;
+}
+
+#nav li a {
+    display: block;
+    padding: 12px 0px;
+    text-decoration: none;
+    width: 150px;
+		/* this is the width of the menu items */
+    line-height: 35px;
+        /* this is the hieght of the menu items */
+    color: #ffffff;
+        /* list item font color */
+	font-size:22px;
+	font-family: 'Bitter', serif;
+	
+}
+
+#nav li li a {
+    font-size: 16px;
+	font-family: 'Bitter', serif;
+}
+/* smaller font size for sub menu items */
+
+#nav li:hover {
+    background: gray;
+}
+ /* highlights current hovered list item and the parent list items when hovering over sub menues */
+
+#nav ul {
+    position: absolute;
+    padding: 0;
+    left: 0;
+    display: none;
+       /* hides sublists */
+}
+
+#nav li:hover ul ul {
+    display: none;
+}
+/* hides sub-sublists */
+
+#nav li:hover ul {
+    display: block;
+}
+ /* shows sublist on hover */
+
+#nav li li:hover ul {
+    display: block;
+        /* shows sub-sublist on hover */
+    margin-left: 150px;
+        /* this should be the same width as the parent list item */
+    margin-top: -59px;
+        /* aligns top of sub menu with top of list item */
+}
+
+
+
+
+
+
+
+
+.text {
+	transform: translate(38%,0%);
+	padding-bottom:10px;
+}
+.btn{
+  background-color: none;
+  text-decoration:none;
+  color: #000000;
+  padding: 16px 25px;
+  text-align: center;
+  display: inline-block;
+  height:35px;
+  
+  
+
+}
+
+.text ul li{
+ padding-top:70px;
+ list-style-type: none;
+}
+.text a{
+text-decoration:none;
+}
+.text a:hover, a:active {
+  background-color: none; 
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5);
+}
+.btn{
+ border: 2px solid black;
+ font-size: 28px;
+ margin-right:23px;
+ margin-left:23px;
+ 
+}
+.text span{
+	font-family: 'Montserrat', sans-serif;
+}
+
+.above_footer{
+	position:fixed;
+	width:100%;
+	bottom:0;
+}
+.home_footer{
+	float:left;
+	bottom:0;
+	background: linear-gradient(to right, #00ccff 0%, #ffcc99 59%);
+	width:100%;
+	margin-top:0px;
+	text-align: center;
+}
+.home_footer li{
+	position:relative;
+	display:inline-block;
+	list-style: none inside; 
+	width: 150px;
+}
+.home_footer  li a{
+	color:black;
+	text-decoration:none;
+	font-size:24px;
+	line-height: 45px;
+	font-family: 'Bitter', serif;
+	
+	
+	
+}
+.home_footer li:hover {
+    background:white ;
+}
+
+.over {
+	padding-top:15px;
+	justify-content:center;
+}
+.over p{
+	font-size:20px;
+	font-family: 'Oswald', sans-serif;
+	color:darkred;
+	padding-left:10px;
+	padding-right:10px;
+	line-height:30px;
+}

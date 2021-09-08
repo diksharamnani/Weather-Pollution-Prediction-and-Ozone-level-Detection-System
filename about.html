@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>About us Page</title>
+			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='about.css')}}">
+	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='nav1.css')}}">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"<
+		integrity=
+"sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+		crossorigin="anonymous">
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+		integrity=
+"sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+		crossorigin="anonymous">
+	</script>
+	
+	<script src=
+"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+		integrity=
+"sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+		crossorigin="anonymous">
+	</script>
+	
+	<script src=
+"https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+		integrity=
+"sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+		crossorigin="anonymous">
+	</script>
+</head>
+
+<body>
+	
+<div class="topnav">
+	<div class="logo">
+		<img src="{{ url_for('static', filename='logocrop.jpg' ) }}" width="200" height="150">
+		<span>Forecast Radar</span>
+	</div>
+    <ul id="nav">
+        <li><a href="home_final">Home</a></li>
+        <li><a href="#">Graphs
+		<i class="fa fa-caret-down"></i></a>
+		
+            <ul>
+                <li><a href="#">Weather&nbsp;
+				<i class="fas fa-caret-right"></i></a>
+					<ul>
+                        <li><a href="temperature.html">Temperature</a>
+                            <li><a href="humidity.html">Humidity</a>
+							<li><a href="heatindex.html">Heat Index</a>
+							<li><a href="dewpoint.html">Dew Point</a>
+                    </ul>
+					</li>
+                <li><a href="#">Pollution&nbsp;
+				<i class="fas fa-caret-right"></i></a>
+                    <ul>
+                        <li><a href="AQIf.html">AQI</a>
+                            <li><a href="PM25f.html">PM 2.5</a>
+							<li><a href="PM10f.html">PM 10</a>
+                    </ul>
+                    </li>
+            </ul>
+            </li>
+			</li>
+			</li>
+			</li>
+			<li><a href="{{url_for('gallery')}}">Gallery</a></li>
+			<div class="topnav-right">
+				<li><a href="{{url_for('home_try_a')}}">Log Out</a></li>
+			</div>
+    </ul>
+  </div>
+	<section class="background firstsection">
+		<div class="box-main">
+			<div class="firstHalf">
+				<p class="text-big">About US</p>
+
+				<h2 class="text-big">
+					Forecast For All !
+				</h2>
+				<p class="text-small">Our brand mission is to make quality weather and pollution information available to every person on this planet. 
+					No matter where you live in the world or how obscure an activity you require weather information for - 
+					we will provide you with as much relevant, local weather data as we can uncover.
+					We promise to provide weather data for those that are underserved by other weather providers.
+					</p>
+				<p class="text-small">Data as Design
+					Especially in a world where so much data is consumed on the small screen of a mobile phone, 
+					we have invested a lot of time and energy into the design of our products across all digital platforms. 
+					We have created a user experience that enables you to find as much weather data as you need as quickly as possible.
+				</p>
+				<br>
+
+			</div>
+		</div>
+	</section>
+	<div class="above_footer">
+  <div class="foot">
+  <div class="home_footer">
+	<li><a href="{{url_for('about')}}">About us</a></li>
+	<li><a href="{{url_for('contact_us')}}">Contact us</a></li>
+	<li><a href="{{url_for('faq')}}">FAQs</a></li>
+	</div>
+	</div>
+	</div> 
+	
+
+	
+</body>
+
+</html>

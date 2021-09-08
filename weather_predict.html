@@ -1,0 +1,78 @@
+<html>
+    <head>
+       
+		
+	<meta charset="UTF-8">
+    <title>Weather Prediction</title>
+    <link href="{{url_for('static', filename='sty5.css')}}" rel="stylesheet" type="text/css" media="all" />
+	<link href="{{url_for('static', filename='nav.css')}}" rel="stylesheet" type="text/css" media="all" />
+			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+</head>
+    <body>
+	
+	
+	<div class="topnav">
+	<div class="logo">
+		<img src="{{ url_for('static', filename='logocrop.jpg' ) }}" width="200" height="150">
+
+		<span>Forecast Radar</span>
+	</div>
+    <ul id="nav">
+        <li><a href="home_final">Home</a></li>
+        <li><a href="#">Graphs
+		<i class="fa fa-caret-down"></i></a>
+		
+            <ul>
+                <li><a href="#">Weather&nbsp;
+				<i class="fas fa-caret-right"></i></a>
+					<ul>
+                        <li><a href="temperature.html">Temperature</a>
+                            <li><a href="humidity.html">Humidity</a>
+							<li><a href="heatindex.html">Heat Index</a>
+							<li><a href="dewpoint.html">Dew Point</a>
+                    </ul>
+					</li>
+                <li><a href="#">Pollution&nbsp;
+				<i class="fas fa-caret-right"></i></a>
+                    <ul>
+                        <li><a href="AQIf.html">AQI</a>
+                            <li><a href="PM25f.html">PM 2.5</a>
+							<li><a href="PM10f.html">PM 10</a>
+                    </ul>
+                    </li>
+            </ul>
+            </li>
+			</li>
+			</li>
+			</li>
+			<li><a href="{{url_for('gallery')}}">Gallery</a></li>
+			<div class="topnav-right">
+				<li><a href="{{url_for('home_try_a')}}">Log Out</a></li>
+			</div>
+    </ul>
+  </div>
+  
+	
+	
+	
+	 <h1 align = center >Prediction of Weather</h2>
+        <h3>{{pred_temp}}</h3>
+        <h3> {{pred_humid}}</h3>
+        <h3> {{pred_heat}}</h3>
+        <h3>{{pred_dew}}</h3>
+		
+		
+				
+<div class="above_footer">
+  <div class="foot">
+  <div class="home_footer">
+	<li><a href="{{url_for('about')}}">About us</a></li>
+	<li><a href="{{url_for('contact_us')}}">Contact us</a></li>
+	<li><a href="{{url_for('faq')}}">FAQs</a></li>
+	</div>
+	</div>
+	</div> 
+
+    </body>
+</html>

@@ -1,0 +1,22 @@
+<html>
+	<head>
+		
+		<title> PM 2.5 </title>
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+	</head>
+	<body  style="    background: linear-gradient(to bottom, #99ffcc 0%, #66ccff 100%);">
+	<div style="text-align:center; ">
+	<h2 style="font-family: 'Satisfy', cursive; font-size:35px;">Graph for PM 2.5</h2>
+	
+		<img src="{{ url_for('static', filename='PM25rnn.png' ) }}">
+	<p style="font-family: 'Poppins', sans-serif; font-weight:bold;">The graph represent the PM 2.5 from year 2015 to mid 2020 as per the data obtained (orange color), while the blue line represents 
+		the prediction of PM 2.5 from mid 2020 to mid 2021.
+		</p>
+	</div>
+	</body>
+	
+
+
+</html> 

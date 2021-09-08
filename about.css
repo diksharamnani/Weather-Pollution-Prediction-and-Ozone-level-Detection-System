@@ -1,0 +1,92 @@
+*{
+	margin:0;
+	padding:0;
+}
+	
+html{	
+	scroll-behaviour:smooth;
+}
+
+
+body{
+		background-image: url('about2.jpg');
+		background-size:cover;
+}
+
+	
+.firstsection{
+	
+	/* It is to make the height of the
+	viewport to be 100 */
+	height:100vh;
+}
+	
+.box-main{
+	
+	/* This is to display the contact us and the
+	sentences below it to be displayed in flex */
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	
+	/* This is to display the text to have
+	a color of white */
+	color:black;
+	max-width:50%;
+	
+	/* Now we will set the margin to auto */
+	/* This will make all the text to be
+	displayed at the center of the page */
+	margin:auto;
+	
+	/* This will make the text to display at
+	the center of the page vertically */
+	height:80%;
+}
+	
+.firstHalf{	
+	width:75%;
+	display:flex;
+	
+	/* It is to specify the direction of
+	the flexible items */
+	flex-direction:column;
+	justify-content:center;
+	padding-top:300px;
+	padding-bottom:50px;
+}
+	
+.firstHalf img{	
+	display:flex;
+	border-radius:9050px;
+}
+	
+/* This is used to make the text to
+appear bigger */
+/* Now we have used a font here to distinguish
+itself from the next text */
+.text-big{
+	font-family: 'Piazzolla', serif;
+	
+	/* The text to have a style of bold */
+	font-weight: bold;
+	
+	/* The size of the text to be appearing as
+	bigger to distinguish itself from the text
+	in the class text-small */
+	font-size: 41px;
+	
+	/* The text to be aligned at center */
+	text-align:center;
+	color:floralwhite;
+}
+	
+.text-small{	
+	font-family: 'Sansita Swashed', cursive;
+	font-size: 20px;
+	text-align:center;
+	color:white;
+}
+	
+
+	

@@ -1,0 +1,138 @@
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>FAQ's</title>
+  <link rel='stylesheet' href='https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css'>
+	 <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='nav1.css')}} "> 
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='faq_css.css')}}">  
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+
+
+
+<body>
+<div class="topnav">
+	<div class="logo">
+		<img src="{{ url_for('static', filename='logocrop.jpg' ) }}" width="200" height="150">
+
+		<span>Forecast Radar</span>
+	</div>
+    <ul id="nav">
+        <li><a href="home_final">Home</a></li>
+        <li><a href="#">Graphs
+		<i class="fa fa-caret-down"></i></a>
+		
+            <ul>
+                <li><a href="#">Weather&nbsp;
+				<i class="fas fa-caret-right"></i></a>
+					<ul>
+                        <li><a href="temperature.html">Temperature</a>
+                            <li><a href="humidity.html">Humidity</a>
+							<li><a href="heatindex.html">Heat Index</a>
+							<li><a href="dewpoint.html">Dew Point</a>
+                    </ul>
+					</li>
+                <li><a href="#">Pollution&nbsp;
+				<i class="fas fa-caret-right"></i></a>
+                    <ul>
+                        <li><a href="AQIf.html">AQI</a>
+                            <li><a href="PM25f.html">PM 2.5</a>
+							<li><a href="PM10f.html">PM 10</a>
+                    </ul>
+                    </li>
+            </ul>
+            </li>
+			</li>
+			</li>
+			</li>
+			<li><a href="{{url_for('gallery')}}">Gallery</a></li>
+			<div class="topnav-right">
+				<li><a href="{{url_for('home_try_a')}}">Log Out</a></li>
+			</div>
+    </ul>
+  </div>
+  
+<div class="container">
+ 
+  <h2>Frequently Asked Questions</h2>
+ 
+  <div class="accordion">
+    
+    <div class="accordion-item">
+      <a>What is Forecasting?</a>
+      <div class="content">
+        <p>In science, the forecasting means the process of estimation of the value of some variable at some future time. One of the primary functions of the national Weatherservices is forecast of weather parameters such as rainfall, temperature, wind,humidity etc.</p>
+    </div>
+	<div class="accordion-item">
+      <a>Why are weather forecasts sometimes inaccurate?</a>
+      <div class="content">
+        <p>Air pressure, temperature, mountain ranges, ocean currents and many other factors combine to produce an enormous quantity of interacting variables all of which can alter the weather to a greater or lesser extent. However, greater understanding of the science, plus the use of powerful computer models, continue to improve our ability to make more accurate predictions with longer lead times.</p>
+      </div>
+    </div>
+	<div class="accordion-item">
+      <a>What is Air Quality Index(AQI)?</a>
+      <div class="content">
+        <p>The Air Quality Index (AQI) is used for reporting daily air quality. It tells you how clean or polluted your air is, and what associated health effects might be a concern for you. The AQI focuses on health effects you may experience within a few hours or days after breathing polluted air.</p>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <a> How does the AQI work?</a>
+      <div class="content">
+        <p> Think of the AQI as a yardstick that runs from 0 to 500. The higher the AQI value, the greater the level of air pollution and the greater the health concern. For example, an AQI value of 50 or below represents good air quality, while an AQI value over 300 represents hazardous air quality.
+
+For each pollutant an AQI value of 100 generally corresponds to an ambient air concentration that equals the level of the short-term national ambient air quality standard for protection of public health. AQI values at or below 100 are generally thought of as satisfactory. When AQI values are above 100, air quality is unhealthy: at first for certain sensitive groups of people, then for everyone as AQI values get higher.
+
+The AQI is divided into six categories. Each category corresponds to a different level of health concern. Each category also has a specific color. The color makes it easy for people to quickly determine whether air quality is reaching unhealthy levels in their communities..</p>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <a> what are the five major pollutants?</a>
+      <div class="content">
+        <p>EPA establishes an AQI for five major air pollutants regulated by the Clean Air Act. Each of these pollutants has a national air quality standard set by EPA to protect public health:
+		ground-level ozone,particle pollution (also known as particulate matter, including PM2.5 and PM10),carbon monoxide,sulfur dioxide,nitrogen dioxide </p>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <a>What is ozone? </a>
+      <div class="content">
+        <p> Ozone is a form of oxygen. The oxygen we breathe is in the form of oxygenmolecules (O2) - two atoms of oxygen bound together. Ozone, on the other hand,consists of three atoms of oxygen bound together (O3). Most of the atmosphere'sozone occurs in the stratosphere. Ozone is colourless and has a very harsh odour. </p>
+      </div>
+    </div>
+	<div class="accordion-item">
+      <a>Why is the ozone important? ? </a>
+      <div class="content">
+        <p> Ozone's unique physical properties allow the ozone layer to act as our planet's
+sunscreen, providing an invisible filter to help protect all life forms from the sun's
+damaging ultraviolet (UV) rays. Most incoming UV radiation is absorbed by ozone
+and prevented from reaching the Earth's surface. Without the protective effect of
+ozone, life on Earth would not have evolved the way it has. </p>
+      </div>
+    </div>
+  </div>
+  
+</div>
+ 
+<script src='https://code.jquery.com/jquery-3.2.1.min.js'></script>
+<script  src="{{ url_for('static', filename='faq_js.js' ) }}"></script>
+ 
+
+<div class="faqimages">
+<img src="{{ url_for('static', filename='faqimg.jpg' ) }}"   style="width:500px;height:400px">
+</div>
+</div>
+
+
+<div class="above_footer">
+  <div class="foot">
+  <div class="home_footer">
+	<li><a href="{{url_for('about')}}">About us</a></li>
+	<li><a href="{{url_for('contact_us')}}">Contact us</a></li>
+	<li><a href="{{url_for('faq')}}">FAQs</a></li>
+	</div>
+	</div>
+	</div> 
+
+
+
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='home_css_a.css')}}">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+
+<title>Home Page</title>
+</head>
+<body>
+	
+  <div class="topnav">
+	<div class="logo">
+		<img src="{{ url_for('static', filename='logocrop.jpg' ) }}" width="200" height="150">
+
+		<span>Forecast Radar</span>
+	</div>
+    <ul id="nav">
+        <li><a href="/">Home</a></li>
+        <li><a href="#">Graphs
+		<i class="fa fa-caret-down"></i></a>
+		
+            <ul>
+                <li><a href="#">Weather&nbsp;
+				<i class="fas fa-caret-right"></i></a>
+					<ul>
+                        <li><a href="temperature.html">Temperature</a>
+                            <li><a href="humidity.html">Humidity</a>
+							<li><a href="heatindex.html">Heat Index</a>
+							<li><a href="dewpoint.html">Dew Point</a>
+                    </ul>
+					</li>
+                <li><a href="#">Pollution&nbsp;
+				<i class="fas fa-caret-right"></i></a>
+                    <ul>
+                        <li><a href="AQIf.html">AQI</a>
+                            <li><a href="PM25f.html">PM 2.5</a>
+							<li><a href="PM10f.html">PM 10</a>
+                    </ul>
+                    </li>
+            </ul>
+            </li>
+			</li>
+			</li>
+			</li>
+			<li><a href="{{url_for('login')}}">Gallery</a></li>
+			<div class="topnav-right">
+				<li><a href="{{url_for('login')}}">Login</a></li>
+				<li><a href="{{url_for('register')}}">Register</a></li>
+			</div>
+    </ul>
+  </div>
+  
+  
+
+
+
+  <div class="text">
+  <ul>
+  <li><a  class= btn href="{{url_for('login')}}"><b>Weather</b>
+  <i class="fas fa-temperature-high"></i>&nbsp;</a></li>
+  <li><a  class= btn href="{{url_for('login')}}"><b>Pollution</b>
+  <i class="fas fa-smog"></i></a></li>
+  <li><a  class= btn href="{{url_for('login')}}"><b> &nbsp; &nbsp;Ozone <span><i class="far fa-circle"></i><sub>3</sub></span>&nbsp;&nbsp;</b></a></li>
+  </ul>
+  </div>
+  
+  
+  
+    <div class=over>
+  <p>Accurate 12 Month Weather-Pollution Forecasts of India in terms of Temperature, Humidity,HeatIndex,PM 2.5 and many more. 
+	We provide detailed Weather-Pollution Forecasts over a 12 Month period as per user requirement. 
+	Our statistical analysis can be informative considering impact of Environment to Earth as well as show past 5 years statistics and present temperature, weather and heatIndex. 
+	You can also analyse the ozone stats which detect the day is ozone or not. 
+	Select our weather and pollution forecaster pages to get monthly detail and accurate weather and pollution reports. 
+	Browse our Weather-Pollution photo gallery showing a great selection of Weather-Pollution extremes from around the world including hurricanes,Global impact, storms, tornadoes and major impact of Environment to Society.</p>
+  </div>
+<div class="above_footer">
+  <div class="foot">
+  <div class="home_footer">
+	<li><a href="{{url_for('login')}}">About us</a></li>
+	<li><a href="{{url_for('login')}}">Contact us</a></li>
+	<li><a href="{{url_for('login')}}">FAQs</a></li>
+	</div>
+	</div>
+	</div> 
+	
+
+</body>
+
+</html>

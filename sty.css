@@ -1,0 +1,75 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+ background-image: url('cloudy.gif');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 1350px 650px;
+  text-align: center;
+  font-size: 22px;
+  font-style: bold;
+  
+}
+ body{
+    background-size: cover;
+    
+    height: 100vh;
+    padding:0;
+    margin:0;
+}
+
+.container
+{
+	margin-top: 50px;
+}
+
+.title
+    {
+        color: #4F4F4F;
+        font-weight: bold;
+    }
+
+
+    .select-btn-streaming
+    {   
+        width: 100%;
+        max-width: 30% !important;
+        border: 1px solid #969090;
+        box-sizing: border-box;
+        border-radius: 4px;
+		
+    }
+
+    select 
+    {
+		margin-left:100px;
+		 margin-top:  30px;
+        padding: 0.8em 0.5em;
+        width: 40%;
+    }
+
+    /* Register */
+    .button_register_input
+    {
+		align: center;
+        display: block;
+		margin-left: 520px;
+		margin-right: 380px;
+        margin-top:  20px;
+        width: 80%;
+        max-width: 30% !important;
+        height: 50px;
+        background-color: #D91B1B;
+        color: white;
+        border:0px;
+        /* Style Text button */
+        font-size: 18px;
+        font-weight: bold;
+    }  
+	
+	
+		
+.dropdown-wrapper{
+	padding-top:50px;
+	padding-bottom:220px;
+}

@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merienda+One&display=swap');
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+:root {
+	--myfont:'Mulish', sans-serif;
+	--my-btn-font:'montserrat', sans-serif;
+	--lg-lightcolor:linear-gradient(to left, rgba(116, 235, 213, 0.6), rgba(159,172,230,0.6));
+	--lg-color:linear-gradient(to left,#74ebd5,#9face6);
+	--my-header-font:'Merienda One', cursive;
+}
+body {
+	background:var(--lg-lightcolor);
+	background-size:100%;
+	background-repeat:no-repeat;
+	font-family: var(--myfont);
+	
+	align-items:center;
+	justify-content:center;
+	min-height: 100vh;
+	width: 100vw;
+	
+	max-width:100%;
+}
+.bgimg{
+	background:linear-gradient(rgba(255,255,255,.4), rgba(255,255,255,.4)),url(contact.jpg) no-repeat ;
+	
+	background-size: 100% 100%;
+}
+.bgimg h1{
+	padding-bottom:8px;
+	margin:0px;
+	text-align:center;
+	text-transform:uppercase;
+	color:#5132cd;
+	font-family: var(--my-header-font);
+}
+.bgimg h3{
+	padding:0px;
+	padding-bottom:20px;
+	margin-top:180px;
+	text-align:center;
+	text-transform:uppercase;
+	color:#5132cd;
+	font-family: var(--my-header-font);
+}
+form{
+	background-color:white;
+}
+.pcontainer {
+	display:flex;
+	justify-content:center;
+}
+.container1 {
+	
+	background-attachment:#fff;
+	border-radius:10px;
+	-webkit-border-radius:10px;
+	box-shadow: 0 2.8px 2.2px rgba(0,0,0,0.2), 0 6.7px 5.3px rgba(0,0,0,0.3), 0 12.4px 10.4px rgba(0,0,0,0.4);
+	overflow:hidden;
+	width: calc(100vw - 60vw);
+	max-width:100%;
+	margin-top:22px;
+	margin-bottom:25px;
+}
+
+.header {
+	background:var(--lg-color);
+	padding:30px 0;
+}
+.header h2{
+	color:#222;
+	font-family:var(--my-btn-font);
+	font-size:28px;
+	text-transform:uppercase;
+	text-align: center;
+	font-weight:bold;
+}
+.empform{
+	padding:40px;
+}
+.empform-control{
+	margin-bottom:30px;
+	position:relative;
+}
+.empform-control label{	
+	display:inline-block;
+	margin-bottom:5px;
+	
+}
+.empform-control input {
+	width:100%;
+	border:2px solid #f0f0f0;
+	border-radius:5px;
+	display:block;
+	font-family:var(--myfont);
+	font-size:14px;
+	padding:12px;
+}
+.empform-control input:focus{
+	outline:0;
+	border-color:#777;
+}
+.empform-control.success input{
+	border-color:#2ecc71;
+}
+	
+.empform-control.error input{
+	border-color:#e74c3c;
+}
+.empform-control textarea {
+	width:100%;
+	border:2px solid #f0f0f0;
+	border-radius:5px;
+	display:block;
+	font-family:var(--myfont);
+	font-size:14px;
+	padding:12px;
+}
+.empform-control textarea:focus{
+	outline:0;
+	border-color:#777;
+}
+.empform-control.success textarea{
+	border-color:#2ecc71;
+}
+	
+.empform-control.error textarea{
+	border-color:#e74c3c;
+}
+
+	
+
+
+.empform .btn{
+	background: var(--lg-color);
+	border-radius:6px;
+	border:none;
+	outline:none;
+	color:#fff;
+	display:block;
+	font-family:var(--my-btn-font);
+	font-size:20px;
+	padding: 15px 0;
+	margin-top:20px;
+	width:100%;
+	font-weight:bold;
+	text-transform:uppercase;
+	transition: all is ease;
+}
+
+.empform .btn:hover{
+	background:linear-gradient(to right, rgba(116, 235, 213, 0.6), rgba(159,172,230,0.6));
+}
+@media screen and (max-width:700px){
+		
+	.container1 {
+		width:100%;
+	}
+
+}	
+
+
+
+
+
+
+
+
+
+
+<!--!>

@@ -1,0 +1,97 @@
+.logo1{
+	background-image: linear-gradient(to right, #FBC8BF,#BDCEED);
+	padding:0;
+	margin:0;
+}
+.logo1 img{
+	display:inline-block;
+}
+.logo1 span{
+	font-size:48px;
+	margin-left:45px;
+	font-family: 'Lobster', cursive;
+}
+.topnav_a_a {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  position:fixed ;
+  top: 0;
+  width: 100%;
+  
+}
+.topnav_a_a-right {
+  float: right;
+}
+.topnav_a_a a.active {
+  background-color: gray;
+  color: white;
+}
+#nav_a {
+    list-style: none inside; 
+	margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+#nav_a li{
+	background-color:black;
+    display: block;
+    position: relative;
+    float: left;
+	color:white;
+}
+
+#nav_a li a {
+    display: block;
+    padding: 12px 0px;
+    text-decoration: none;
+    width: 150px;
+		/* this is the width of the menu items */
+    line-height: 35px;
+        /* this is the hieght of the menu items */
+    color: #ffffff;
+        /* list item font color */
+	font-size:22px;
+	font-family: 'Bitter', serif;
+	
+}
+
+#nav_a li li a {
+    font-size: 16px;
+	font-family: 'Bitter', serif;
+}
+/* smaller font size for sub menu items */
+
+#nav_a li:hover {
+    background: gray;
+}
+ /* highlights current hovered list item and the parent list items when hovering over sub menues */
+
+#nav_a ul {
+    position: absolute;
+    padding: 0;
+    left: 0;
+    display: none;
+       /* hides sublists */
+}
+
+#nav_a li:hover ul ul {
+    display: none;
+}
+/* hides sub-sublists */
+
+#nav_a li:hover ul {
+    display: block;
+}
+ /* shows sublist on hover */
+
+#nav_a li li:hover ul {
+    display: block;
+        /* shows sub-sublist on hover */
+    margin-left: 150px;
+        /* this should be the same width as the parent list item */
+    margin-top: -59px;
+        /* aligns top of sub menu with top of list item */
+}
+
